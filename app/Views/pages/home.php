@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
                 <!-- small box -->
                 <div class="small-box bg-info">
                     <div class="inner">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
                 <!-- small box -->
                 <div class="small-box bg-warning">
                     <div class="inner">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
                 <!-- small box -->
                 <div class="small-box bg-danger">
                     <div class="inner">
@@ -44,11 +44,12 @@
             <!-- ./col -->
         </div>
 
-
+        <br>
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-header">
@@ -72,129 +73,142 @@
                                     <div class="card">
                                         <div class="card-header">
                                             <h3 class="card-title">
-                                                <li class="pull-left header"><i class="fa fa-clock-o"></i> Jadwal</li>
+                                                <li class="pull-left header"><i class="fa fa-clock-o"></i> Monitoring Perkuliahan</li>
                                             </h3>
-                                            <div class="card-tools">
-                                                <ul class="nav nav-pills ml-auto">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Hari ini</a>
-                                                    </li>
-                                                    <br>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#sales-chart" data-toggle="tab">Besok</a>
-                                                    </li>
-                                                    <br>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="#sales-chart" data-toggle="tab">Ujian</a>
-                                                    </li>
-                                                </ul>
-                                                <div style="padding-left:5px;padding-right:5px;">
-                                                    <div class="no-padding">
-                                                        <div class="table-responsive">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                         <!-- /.card-header -->
                                         <div class="card-body">
                                             <table class="table table-bordered table-striped dataTable">
                                                 <thead>
                                                     <tr>
-                                                        <th>Tanggal & Waktu</th>
-                                                        <th>Jenis</th>
                                                         <th>Mata Kuliah</th>
-                                                        <th>Ruang</th>
+                                                        <th>Kelas</th>
+                                                        <th>Absensi</th>
+                                                        <th>nilai</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td>1.</td>
-                                                        <td>Kuliah</td>
-                                                        <td> </td>
-                                                        <td><span class="badge bg-success">GIK L1C</span></td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>2.</td>
-                                                        <td>Kuliah</td>
-                                                        <td> </td>
-                                                        <td><span class="badge bg-success">GIK L2A</span></td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>3.</td>
-                                                        <td>Kuliah</td>
-                                                        <td> </td>
-                                                        <td><span class="badge bg-success">LAB R1&R2</span></td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
                                                     </tr>
                                                     <tr>
                                                         <td>4.</td>
-                                                        <td>Kuliah</td>
-                                                        <td> </td>
-                                                        <td><span class="badge bg-success">GIK L1A</span></td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5.</td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6.</td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7.</td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8.</td>
+                                                        <td>A</td>
+                                                        <td></td>
+                                                        <td><span class="badge bg-success"></span></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
+                                    </div>
                                 </section>
                                 <!-- right col -->
                             </div>
                             <!-- /.row (main row) -->
                         </div><!-- /.container-fluid -->
                     </div>
-                </div>
-            </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-primary card-tabs">
+                            <div class="card-header p-0 pt-1">
+                                <ul class="nav nav-tabs" id="custom-tabs-one-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="custom-tabs-one-berita-tab" data-toggle="pill" href="#custom-tabs-one-berita" role="tab" aria-controls="custom-tabs-one-berita" aria-selected="true">Berita</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="custom-tabs-one-vm-tab" data-toggle="pill" href="#custom-tabs-one-vm" role="tab" aria-controls="custom-tabs-one-vm" aria-selected="false">Visi Misi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content" id="custom-tabs-one-tabContent">
+                                    <div class="tab-pane fade show active" id="custom-tabs-one-berita" role="tabpanel" aria-labelledby="custom-tabs-one-berita-tab">
+                                        <!-- /.card-header -->
+                                        <div class="card-body">
+                                            <div class="callout callout-danger">
+                                                <h4>Foto Profil Mahasiswa Angkatan 2022</h4>
+
+                                                <p>Mahasiswa angkatan 2022 diwajibkan untuk mengunggah foto profil di Siakadu.</p>
+                                            </div>
+                                            <div class="callout callout-info">
+                                                <h4>Perpanjangan Pengisian KRS Semester Ganjil 2022/2023</h4>
+
+                                                <p>Pengisian KRS Semester Ganjil 2022/2023 diperpanjang sampai dengan tanggal 10 September 2022.
+                                                    Bagi mahasiswa baru ataupun mahasiswa lama diharapkan sudah melakukan pengisian KRS pada waktu tersebut.
+                                                    Terima kasih.</p>
+                                            </div>
+                                            <div class="callout callout-warning">
+                                                <h4>Perpanjangan masa pengisian nilai Semester Genap 2021/2022</h4>
+
+                                                <p>Sesuai dengan Surat Edaran Wakil Rektor Bidang Akademik Universitas Lampung Nomor
+                                                    5603/UN26/PP/2022 tanggal 24 Juni 2022, maka pengisian nilai Siakadu dapat dilakukan
+                                                    sampai dengan tanggal 2 Juli 2022.Terima kasih.</p>
+                                            </div>
+                                            <div class="callout callout-success">
+                                                <h6><b>Berita Lain</b></h6>
+
+                                                <a href="/validasikrs.php">Validasi KRS </a><br>
+                                                <a href="/siakadandroid.php">Apk Siakadu untuk Android</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="custom-tabs-one-vm" role="tabpanel" aria-labelledby="custom-tabs-one-vm-tab">
+                                        <h5><b>VISI</b></h5>
+                                        <P>
+                                            Pada Tahun 2025 Menjadi Program Studi Ilmu Komputer Yang Unggul Dalam Pendidikan Dan Penelitian Bidang Komputer dan Informatika, Serta Berprestasi Di Tingkat Nasional dan Internasional
+                                        </P>
+                                        <br>
+                                        <h5><b>MISI</b></h5>
+                                        <P> - </P>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+
+                        </div>
+                    </div>
         </section>
         <!-- /.content -->
     </div>
 </section>
 
-<div class="col-md-4">
-    <div class="card card-default">
-        <div class="card-header">
-            <div class="card-tools">
-                <ul class="nav nav-pills ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#revenue-chart" data-toggle="tab"><i class="fas fa-bullhorn"></i> Berita</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sales-chart" data-toggle="tab"><i class="fa fa-list-alt"></i> Visi Misi</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.card-header -->
-        <div class="card-body">
-            <div class="callout callout-danger">
-                <h4>Foto Profil Mahasiswa Angkatan 2022</h4>
-
-                <p>Mahasiswa angkatan 2022 diwajibkan untuk mengunggah foto profil di Siakadu.</p>
-            </div>
-            <div class="callout callout-info">
-                <h4>Perpanjangan Pengisian KRS Semester Ganjil 2022/2023</h4>
-
-                <p>Pengisian KRS Semester Ganjil 2022/2023 diperpanjang sampai dengan tanggal 10 September 2022.
-                    Bagi mahasiswa baru ataupun mahasiswa lama diharapkan sudah melakukan pengisian KRS pada waktu tersebut.
-                    Terima kasih.</p>
-            </div>
-            <div class="callout callout-warning">
-                <h4>Perpanjangan masa pengisian nilai Semester Genap 2021/2022</h4>
-
-                <p>Sesuai dengan Surat Edaran Wakil Rektor Bidang Akademik Universitas Lampung Nomor
-                    5603/UN26/PP/2022 tanggal 24 Juni 2022, maka pengisian nilai Siakadu dapat dilakukan
-                    sampai dengan tanggal 2 Juli 2022.Terima kasih.</p>
-            </div>
-            <div class="callout callout-success">
-                <h6><b>Berita Lain</b></h6>
-
-                <a href="/validasikrs.php">Validasi KRS </a><br>
-                <a href="/siakadandroid.php">Apk Siakadu untuk Android</a></p>
-            </div>
-        </div>
-        <!-- /.card-body -->
-    </div>
-    <!-- /.card -->
-</div>
-<!-- /.col -->
-</div>
 <?= $this->endSection() ?>
