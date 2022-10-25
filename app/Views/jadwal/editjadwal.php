@@ -1,28 +1,24 @@
 <?= $this->extend('template') ?>
 <?= $this->section('content') ?>
 <div class="p-4">
-    <form action="/updatejadwal/<?= $id ?>" method="post">
-        <div class="row">
-            <div class="col-6">
-                <div class="mb-3">
-                    <label for="waktu" class="form-label">WAKTU</label>
-                    <input type="text" name="waktu" class="form-control" id="waktu" value="<?= $waktu ?>">
-                </div>
-                <div class="mb-3">
-                    <label for="jenis" class="form-label">JENIS</label>
-                    <input type="text" name="jenis" class="form-control" id="jenis" value="<?= $jenis ?>">
-                </div>
-                <div class="mb-3">
-                    <label for="matkul" class="form-label">MATKUL</label>
-                    <input type="text" name="matkul" class="form-control" id="matkul" value="<?= $matkul ?>">
-                </div>
-            </div>
-            <div class="col-6">
-                <label for="ruang" class="form-label">RUANG</label>
-                <textarea name="ruang" id="ruang" cols="30" rows="10" class="form-control"><?= $ruang ?></textarea>
-            </div>
+    <form class="mx-5" action="/updatejadwal/<?= $jadwal['id'] ?>" method="post">
+        <div class="form-group">
+            <label for="waktu">Tanggal & Waktu</label>
+            <input type="text" class="form-control" id="waktu" name="waktu" value="<?= $jadwal['waktu'] ?>">
+        </div>
+        <div class="form-group">
+            <label for="jenis">Nama Dosen</label>
+            <input type="text" class="form-control" id="jenis" name="jenis" value="<?= $jadwal['jenis']; ?>">
+        </div>
+        <div class="form-group">
+            <label for="matkul">Mata Kuliah</label>
+            <textarea type="text" class=" form-control" id="matkul" rows="3" name="matkul"><?= $jadwal['matkul']; ?></textarea>
+        </div>
+        <div class="form-group">
+            <label for="ruang" class="form-label">Ruang Kuliah</label>
+            <textarea type="text" name="ruang" class="form-control" id="ruang"><?= $jadwal['ruang'] ?></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <div>
-        <?= $this->endSection() ?>
+
+    <?= $this->endSection() ?>
