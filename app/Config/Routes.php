@@ -50,6 +50,8 @@ $routes->get('/editjadwal/(:num)', 'JadwalController::editjadwal/$1');
 $routes->post('/updatejadwal/(:num)', 'JadwalController::updatejadwal/$1');
 $routes->delete('/deletejadwal/(:num)', 'JadwalController::deletejadwal/$1');
 
+$routes->get('/home', 'MentoringController::index');
+
 $routes->get('/index', 'Pages::index');
 $routes->get('(:any)', 'Pages::view/$1');
 
