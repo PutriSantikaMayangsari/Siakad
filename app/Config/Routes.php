@@ -43,6 +43,15 @@ $routes->get('/edit/(:num)', 'MahasiswaController::edit/$1');
 $routes->post('/update/(:num)', 'MahasiswaController::update/$1');
 $routes->delete('/delete/(:num)', 'MahasiswaController::delete/$1');
 
+// Routes Mahasiswa (Dosen) 
+$routes->get('/', 'Home::index');
+$routes->get('/mahasiswa', 'MahasiswaController::index');
+$routes->get('/create', 'MahasiswaController::create');
+$routes->post('/store', 'MahasiswaController::store');
+$routes->get('/edit/(:num)', 'MahasiswaController::edit/$1');
+$routes->post('/update/(:num)', 'MahasiswaController::update/$1');
+$routes->delete('/delete/(:num)', 'MahasiswaController::delete/$1');
+
 $routes->get('/profil', 'ProfilController::index');
 $routes->get('/createdata', 'ProfilController::createdata');
 $routes->post('/storedata', 'ProfilController::storedata');
