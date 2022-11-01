@@ -43,6 +43,13 @@ $routes->get('/edit/(:num)', 'MahasiswaController::edit/$1');
 $routes->post('/update/(:num)', 'MahasiswaController::update/$1');
 $routes->delete('/delete/(:num)', 'MahasiswaController::delete/$1');
 
+$routes->get('/profil', 'ProfilController::index');
+$routes->get('/createdata', 'ProfilController::createdata');
+$routes->post('/storedata', 'ProfilController::storedata');
+$routes->get('/editdata(:num)', 'ProfilController::editdata/$1');
+$routes->post('/updatedata/(:num)', 'ProfilController::updatedata/$1');
+$routes->delete('/deletedata/(:num)', 'ProfilController::deletedata/$1');
+
 $routes->get('/jadwal', 'JadwalController::index');
 $routes->get('/createjadwal', 'JadwalController::createjadwal');
 $routes->post('/storejadwal', 'JadwalController::storejadwal');
