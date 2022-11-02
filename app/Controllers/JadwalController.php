@@ -58,6 +58,19 @@ class JadwalController extends BaseController
         return redirect()->to('/jadwal');
     }
 
+    public function editjadwal($id)
+    {
+        $jadwalModel = new Jadwal();
+        $jadwal = $jadwalModel->find($id);
+
+        $data = [
+            'title' => 'Edit Jadwal',
+            'jadwal' => $jadwal
+        ];
+
+        return view('jadwal/editjadwal', $data);
+    }
+
     public function updatejadwal($id)
     {
         if (!$this->validate([
@@ -66,7 +79,7 @@ class JadwalController extends BaseController
             'matkul' => 'required',
             'ruang' => 'required',
         ])) {
-            return redirect()->to('/jadwal/editjadwal' . $id);
+            return redirect()->to('/editjadwal' . $id);
         }
         $jadwalModel = new Jadwal();
         $data = [
