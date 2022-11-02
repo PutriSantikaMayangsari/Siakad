@@ -20,7 +20,7 @@
             </div>
             <div class="col-6">
                 <label for="ruang" class="form-label">Ruang Kuliah</label>
-                <textarea name="ruang" id="ruang" cols="30" rows="10" class="form-control"></textarea>
+                <input name="ruang" id="ruang" cols="30" rows="10" class="form-control"></input>
             </div>
         </div>
         <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
