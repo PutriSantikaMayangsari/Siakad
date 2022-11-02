@@ -66,6 +66,14 @@ $routes->get('/editjadwal/(:num)', 'JadwalController::editjadwal/$1');
 $routes->post('/updatejadwal/(:num)', 'JadwalController::updatejadwal/$1');
 $routes->delete('/deletejadwal/(:num)', 'JadwalController::deletejadwal/$1');
 
+//Routes Jadwal (Admin)
+$routes->get('/jadwal', 'JadwalController::index');
+$routes->get('/createjadwal', 'JadwalController::createjadwal');
+$routes->post('/storejadwal', 'JadwalController::storejadwal');
+$routes->get('/editjadwal/(:num)', 'JadwalController::editjadwal/$1');
+$routes->post('/updatejadwal/(:num)', 'JadwalController::updatejadwal/$1');
+$routes->delete('/deletejadwal/(:num)', 'JadwalController::deletejadwal/$1');
+
 $routes->get('/home', 'MentoringController::index');
 
 $routes->get('/index', 'Pages::index');
