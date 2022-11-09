@@ -13,14 +13,15 @@ class MahasiswaController extends BaseController
         $mahasiswa = $mahasiswaModel->findAll();
 
         $data = [
-            'title' => 'Mahasiswa',
+            'title' => ' Data Mahasiswa',
             'mahasiswa' => $mahasiswa
         ];
 
         return view('mahasiswa/list', $data);
     }
 
-    public function create() {
+    public function create()
+    {
         $data = [
             'title' => 'Create Mahasiswa'
         ];
@@ -28,8 +29,9 @@ class MahasiswaController extends BaseController
         return view('mahasiswa/create', $data);
     }
 
-    public function store() {
-        if(!$this->validate([
+    public function store()
+    {
+        if (!$this->validate([
             'npm' => 'required|numeric',
             'nama' => 'required|string',
             'alamat' => 'required',
@@ -49,13 +51,15 @@ class MahasiswaController extends BaseController
         return redirect()->to('/mahasiswa');
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         $mahasiswaModel = new Mahasiswa();
         $mahasiswaModel->delete($id);
         return redirect()->to('/mahasiswa');
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
         $mahasiswaModel = new Mahasiswa();
         $mahasiswa = $mahasiswaModel->find($id);
 
@@ -67,14 +71,15 @@ class MahasiswaController extends BaseController
         return view('mahasiswa/edit', $data);
     }
 
-    public function update($id) {
-        if(!$this->validate([
+    public function update($id)
+    {
+        if (!$this->validate([
             'npm' => 'required|numeric',
             'nama' => 'required|string',
             'alamat' => 'required',
             'deskripsi' => 'required',
         ])) {
-            return redirect()->to('/edit/'.$id);
+            return redirect()->to('/edit' . $id);
         }
         $mahasiswaModel = new Mahasiswa();
         $data = [
