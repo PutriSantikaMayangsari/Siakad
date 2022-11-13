@@ -52,6 +52,13 @@ $routes->get('/edit/(:num)', 'MahasiswaController::edit/$1');
 $routes->post('/update/(:num)', 'MahasiswaController::update/$1');
 $routes->delete('/delete/(:num)', 'MahasiswaController::delete/$1');
 
+$routes->get('/nilai', 'NilaiController::index');
+$routes->get('/createnilai', 'NilaiController::createnilai');
+$routes->post('/storenilai', 'NilaiController::storenilai');
+$routes->get('/editnilai/(:num)', 'NilaiController::editnilai/$1');
+$routes->post('/updatenilai/(:num)', 'NilaiController::updatenilai/$1');
+$routes->delete('/deletenilai/(:num)', 'NilaiController::deletenilai/$1');
+
 $routes->get('/profil', 'ProfilController::index');
 $routes->get('/createdata', 'ProfilController::createdata');
 $routes->post('/storedata', 'ProfilController::storedata');
