@@ -73,6 +73,13 @@ $routes->get('/editjadwal/(:num)', 'JadwalController::editjadwal/$1');
 $routes->post('/updatejadwal/(:num)', 'JadwalController::updatejadwal/$1');
 $routes->delete('/deletejadwal/(:num)', 'JadwalController::deletejadwal/$1');
 
+$routes->get('/absen', 'AbsenController::index');
+$routes->get('/createabsen', 'AbsenController::createabsen');
+$routes->post('/storeabsen', 'AbsenController::storeabsen');
+$routes->get('/editabsen/(:num)', 'NilaiController::editabsen/$1');
+$routes->post('/updateabsen/(:num)', 'NilaiController::updateabsen/$1');
+$routes->delete('/deleteabsen/(:num)', 'NilaiController::deleteabsen/$1');
+
 //Routes Jadwal (Admin)
 $routes->get('/jadwal', 'JadwalController::index');
 $routes->get('/createjadwal', 'JadwalController::createjadwal');
