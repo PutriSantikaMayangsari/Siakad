@@ -1,4 +1,10 @@
-<?= $this->extend('template') ?>
+<?php if (in_groups('dosen')) : ?>
+    <?= $this->extend('templatedosen') ?>
+<?php elseif (in_groups('admin')) : ?>
+    <?= $this->extend('templateadmin') ?>
+<?php else : ?>
+    <?= $this->extend('template') ?>
+<?php endif; ?>
 <?= $this->section('content') ?>
 
 <!-- Main content -->
@@ -84,7 +90,6 @@
                                                         <th scope="col">#</th>
                                                         <th scope="col">Mata Kuliah</th>
                                                         <th scope="col">Kelas</th>
-                                                        <th scope="col">Absensi</th>
                                                         <th scope="col">Nilai</th>
                                                     </tr>
                                                 </thead>
@@ -95,7 +100,6 @@
                                                             <th scope="row"><?= $no ?></th>
                                                             <td><?= $jwd['matkul'] ?></td>
                                                             <td><?= $jwd['kelas'] ?></td>
-                                                            <td><?= $jwd['absensi'] ?>/16</td>
                                                             <td><span class="badge bg-success"><?= $jwd['nilai'] ?></span></td>
                                                             </td>
                                                         </tr>
