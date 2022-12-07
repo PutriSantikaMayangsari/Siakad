@@ -13,11 +13,11 @@
                     <input type="text" name="matkul" class="form-control" id="matkul">
                 </div>
                 <div class="mb-3">
-                    <label for="sks" class="form-label">Sks</label>
+                    <label for="sks" class="form-label">SKS</label>
                     <input type="text" name="sks" class="form-control" id="sks">
                 </div>
                 <div class="mb-3">
-                    <label for="smt" class="form-label">Smt</label>
+                    <label for="smt" class="form-label">Semester</label>
                     <input type="text" name="smt" class="form-control" id="smt">
                 </div>
                 <div class="mb-3">
