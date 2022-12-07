@@ -51,45 +51,4 @@ class AbsenController extends BaseController
 
         return redirect()->to('/absen');
     }
-    public function deleteabsen($id)
-    {
-        $absenModel = new Absen();
-        $absenModel->delete($id);
-        return redirect()->to('/absen');
-    }
-
-    public function editabsen($id)
-    {
-        $absenModel = new Absen();
-        $absen = $absenModel->find($id);
-
-        $data = [
-            'title' => 'Edit absen',
-            'absen' => $absen
-        ];
-
-        return view('absen/editabsen', $data);
-    }
-
-    public function updateabsen($id)
-    {
-        if (!$this->validate([
-            'npm' => 'required',
-            'nama' => 'required',
-            'tanggal' => 'required',
-            'keterangan' => 'required',
-        ])) {
-            return redirect()->to('/editabsen' . $id);
-        }
-        $absenModel = new Absen();
-        $data = [
-            'npm' =>  $this->request->getPost('npm'),
-            'nama' =>  $this->request->getPost('nama'),
-            'tanggal' =>  $this->request->getPost('tanggal'),
-            'keterangan' =>  $this->request->getPost('keterangan'),
-        ];
-        $absenModel->update($id, $data);
-
-        return redirect()->to('/absen');
-    }
 }
